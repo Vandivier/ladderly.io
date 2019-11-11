@@ -47,14 +47,6 @@ const routes: Routes = [
             },
         ],
     },
-    /* Have relevant content pages like nerdwallet, no generic blog
-        {
-            path: 'pages',
-            loadChildren: () => import('app/pages/pages.module')
-            .then(m => m.PagesModule),
-        },
-    */
-    // { path: 'profile' },
     // { path: '**', redirectTo: 'pages' }, // 404
 ];
 

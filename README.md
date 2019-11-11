@@ -30,3 +30,13 @@ Run time assumes LAMP WP install. Run `npm build` then drop the contents of `ui/
    3. Upskill in my current role (could be rolled into get a job as grow income, etc)
    4. long term: invest intelligently (real estate, tax stuff...)
    5. Give back (effective altruism, moral life, what to do once money isn't a problem)
+
+## TODO
+
+1. settings which is under dashboard but different. maybe a gear icon.
+2. social login. https://www.youtube.com/watch?v=2UpflaYiWKw&t=259s
+3. public profiles and friends.
+4. take quizzes and recommend path (developer, designer, business/product)
+5. connected accounts, quiz results, path progress show publicly but configurably public
+6. try to make it more clear what parts of the theme go where. ideally just one file. rn we have multiple themes.scss and styles.scss
+   1. also, nebular is late loading and mutating home.

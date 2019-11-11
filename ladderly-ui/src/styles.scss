@@ -1,0 +1,60 @@
+// this file handles application style after all the framework style and theming.
+// framework style includes: bootstrap, material, nebular
+
+// the below three files include nebular and boostrap
+@import 'app/theme/styles/themes.scss';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@import 'atomic';
+
+$ladderly-theme-light: white;
+$ladderly-theme-dark: rgba(0, 5, 5, 1);
+$ladderly-theme-medium-dark-blue: rgba(26, 71, 83, 1);
+$ladderly-theme-medium-light-blue: rgba(0, 168, 229, 1);
+$ladderly-theme-light-blue: #a5ffff;
+
+body {
+    background: $ladderly-theme-dark;
+    background: linear-gradient(
+        60deg,
+        $ladderly-theme-dark 0%,
+        $ladderly-theme-medium-dark-blue 63%,
+        $ladderly-theme-light-blue 100%
+    );
+    color: $ladderly-theme-light;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+
+    .btn {
+        color: $ladderly-theme-light;
+
+        &:hover {
+            color: $ladderly-theme-light-blue;
+        }
+    }
+}
+
+html {
+    height: 100%;
+}
+
+// TODO: maybe don't need the include or ng-deep below
+@include nb-install-component() {
+    ::ng-deep router-outlet + * {
+        display: block;
+        animation: fade 1s;
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@ import { MENU_ITEMS } from '../../pages-menu';
             <router-outlet></router-outlet>
         </ngx-one-column-layout>
     `,
-    styleUrls: ['../../pages.component.scss', './dashboard.component.scss'],
+    styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
     menu = MENU_ITEMS;
