@@ -10,7 +10,7 @@ import {
 } from '@nebular/auth';
 
 const routes: Routes = [
-    { path: '', pathMatch: 'full' }, // home
+    { component: NbAuthComponent, path: '', pathMatch: 'full' }, // home
     {
         path: 'auth',
         component: NbAuthComponent,

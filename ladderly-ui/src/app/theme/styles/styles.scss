@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+// themes - our custom or/and out of the box themes
+@import 'themes';
+
+// framework component themes (styles tied to theme variables)
+@import '~@nebular/theme/styles/globals';
+@import '~@nebular/auth/styles/all';
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/grid';
+
+// loading progress bar theme
+@import './pace.theme';
+
+@import './layout';
+@import './overrides';
+
+// install the framework and custom global styles
+@include nb-install() {
+    // framework global styles
+    @include nb-theme-global();
+    @include nb-auth-global();
+
+    @include ngx-layout();
+    // loading progress bar
+    @include ngx-pace-theme();
+
+    @include nb-overrides();
+}
+
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@include nb-install() {
+    @include nb-theme-global();
+}
+
+/* THEME:
+
+                        '#1A4753',
+                        '#FFFFFF',
+                        '#00A8E5',
+                        '#000505',
+                        '#A5FFFF',
+                        */
+
+body {
+    background: rgb(0, 5, 5);
+    background: linear-gradient(
+        60deg,
+        rgba(0, 5, 5, 1) 0%,
+        rgba(26, 71, 83, 1) 63%,
+        rgba(0, 168, 229, 1) 100%
+    );
+    color: white;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+
+    .full-page-flex {
+        height: 3rem;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }
+}
+
+html {
+    height: 100%;
+}

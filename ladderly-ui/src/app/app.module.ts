@@ -9,6 +9,8 @@ import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
+import { ThemeModule } from './theme/theme.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -16,6 +18,7 @@ import { AppComponent } from './app.component';
         AppRoutingModule,
         BrowserAnimationsModule,
         BrowserModule,
+        CoreModule.forRoot(),
         HttpClientModule,
         NbEvaIconsModule,
         NbAuthModule,
@@ -29,6 +32,7 @@ import { AppComponent } from './app.component';
         }),
         NbLayoutModule,
         NbThemeModule.forRoot({ name: 'default' }),
+        ThemeModule.forRoot(),
     ],
     providers: [],
     bootstrap: [AppComponent],
