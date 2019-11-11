@@ -10,12 +10,13 @@ const routes: Routes = [
         path: '',
         component: PagesComponent,
         children: [
-            /*
             {
                 path: 'dashboard',
-                component: DashboardComponent,
+                loadChildren: () =>
+                    import('./dashboard/dashboard.module').then(
+                        m => m.DashboardModule
+                    ),
             },
-            */
             {
                 path: 'miscellaneous',
                 loadChildren: () =>

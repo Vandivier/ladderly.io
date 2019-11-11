@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
-import { NbAuthModule, NbPasswordAuthStrategy } from '@nebular/auth';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import {
     NbLayoutModule,
@@ -25,20 +24,6 @@ import { ThemeModule } from './theme/theme.module';
         BrowserModule,
         CoreModule.forRoot(),
         HttpClientModule,
-        NbEvaIconsModule,
-        NbAuthModule,
-        NbAuthModule.forRoot({
-            strategies: [
-                NbPasswordAuthStrategy.setup({
-                    name: 'email',
-                }),
-            ],
-            forms: {},
-        }),
-        NbLayoutModule,
-        NbMenuModule.forRoot(),
-        NbThemeModule.forRoot({ name: 'default' }),
-        ThemeModule.forRoot(),
     ],
     providers: [NbSidebarService],
     bootstrap: [AppComponent],
