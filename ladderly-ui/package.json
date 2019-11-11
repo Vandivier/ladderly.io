@@ -4,7 +4,7 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build && cp -R wp-overrides/. dist/",
+        "build": "ng build && cp -R wp-overrides/. dist/ && cp dist/ladderly-ui/index.html dist/",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
