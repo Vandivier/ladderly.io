@@ -17,4 +17,10 @@ Run time assumes LAMP WP install. Run `npm build` then drop the contents of `ui/
    2. https://www.primefaces.org/primeng/#/
    3. https://ionicons.com/
    4. https://github.com/akveo/ngx-admin
+   5. https://mdbootstrap.com/docs/angular/components/demo/#!
+   6. https://coolbackgrounds.io/
+   7. https://coolors.co/app
+   8. http://colormind.io/
+   9. https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
 2. Login at `mysite.com/wp-admin`
+3. Flip cards https://akveo.github.io/nebular/docs/components/flip-card/overview#nbflipcardcomponent
