@@ -5,7 +5,12 @@ import { NgModule } from '@angular/core';
 
 import { NbAuthModule, NbPasswordAuthStrategy } from '@nebular/auth';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import {
+    NbLayoutModule,
+    NbMenuModule,
+    NbSidebarService,
+    NbThemeModule,
+} from '@nebular/theme';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,10 +36,11 @@ import { ThemeModule } from './theme/theme.module';
             forms: {},
         }),
         NbLayoutModule,
+        NbMenuModule.forRoot(),
         NbThemeModule.forRoot({ name: 'default' }),
         ThemeModule.forRoot(),
     ],
-    providers: [],
+    providers: [NbSidebarService],
     bootstrap: [AppComponent],
 })
 export class AppModule {}

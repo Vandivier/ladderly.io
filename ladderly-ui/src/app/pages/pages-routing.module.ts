@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
     {
@@ -12,7 +13,7 @@ const routes: Routes = [
             /* Should be like a user profile
             {
               path: 'dashboard',
-              component: ECommerceComponent,
+              component: DashboardComponent,
             },
             */
             {
@@ -23,8 +24,8 @@ const routes: Routes = [
                     ),
             },
             {
+                component: HomeComponent,
                 path: '',
-                redirectTo: 'dashboard',
                 pathMatch: 'full',
             },
             {
