@@ -1,0 +1,15 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Let WP handle admin area
+RewriteBase /wp
+RewriteRule ^index\.php$ - [L]
+
+# Let ladderly-ui handle everything else 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ladderly\-ui\/index\.html$ - [L]
+</IfModule>
+
+# END WordPress

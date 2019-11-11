@@ -6,10 +6,11 @@ Web client for http://ladderly.io/
 
 Developer installation is the typical `npm install` then `npm start`.
 
-Run time assumes LAMP WP install. Run `npm build` then drop `ui/dist` folder content into your public html folder.
+Run time assumes LAMP WP install. Run `npm build` then drop the contents of `ui/dist` into your public html folder.
 
-`.htaccess` should be overwritten so that `mysite.com/wp[.]*` and `mysite.com/admin[.]*` are respected by WP, and Angular controls the rest.
+`.htaccess` should be overwritten so that `mysite.com/wp[.]*` is respected by WP, and Angular controls the rest.
 
 ## Misc Notes
 
 1. Currently targeting [Angular Material](https://material.angular.io/guide/theming).
+2. Login at `mysite.com/wp-admin`
