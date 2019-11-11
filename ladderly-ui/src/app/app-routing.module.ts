@@ -1,43 +1,55 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {
+    NbAuthComponent,
+    NbLoginComponent,
+    NbLogoutComponent,
+    NbRegisterComponent,
+    NbRequestPasswordComponent,
+    NbResetPasswordComponent,
+} from '@nebular/auth';
 
 const routes: Routes = [
-    /*
     { path: '', pathMatch: 'full' }, // home
     {
         path: 'auth',
-        // component: NbAuthComponent,
+        component: NbAuthComponent,
         children: [
             {
                 path: '',
-                // component: NbLoginComponent
+                component: NbLoginComponent,
             },
             {
                 path: 'login',
-                // component: NbLoginComponent
+                component: NbLoginComponent,
             },
             {
                 path: 'register',
-                // component: NbRegisterComponent
+                component: NbRegisterComponent,
             },
             {
                 path: 'logout',
-                // component: NbLogoutComponent
+                component: NbLogoutComponent,
             },
             {
                 path: 'request-password',
-                // component: NbRequestPasswordComponent
+                component: NbRequestPasswordComponent,
             },
             {
                 path: 'reset-password',
-                // component: NbResetPasswordComponent
+                component: NbResetPasswordComponent,
             },
         ],
     },
-    // { path: "blog" },
-    { path: 'profile' },
-    { path: '**', redirectTo: 'pages' }, // 404
+    /* Have relevant content pages like nerdwallet, no generic blog
+        {
+            path: 'pages',
+            loadChildren: () => import('app/pages/pages.module')
+            .then(m => m.PagesModule),
+        },
     */
+    // { path: 'profile' },
+    // { path: '**', redirectTo: 'pages' }, // 404
 ];
 
 @NgModule({

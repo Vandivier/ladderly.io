@@ -1,3 +1,10 @@
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@include nb-install() {
+  @include nb-theme-global();
+};
 /* THEME:
 
                         '#1A4753',
@@ -16,25 +23,24 @@ body {
         rgba(0, 168, 229, 1) 100%
     );
     color: white;
-    // does below just come from material style?
-    font-family: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica,
-        Arial, 'Lucida Grande', sans-serif;
-    height: 100vh;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    height: 100%;
     margin: 0;
     overflow: hidden;
-}
 
-.full-page-flex {
-    height: 3rem;
-    position: absolute;
-    top: 40%;
-    width: 100%;
+    .full-page-flex {
+        height: 3rem;
+        position: absolute;
+        top: 40%;
+        width: 100%;
 
-    h1 {
-        font-size: 2.5rem;
-        text-align: center;
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
     }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+    height: 100%;
+}

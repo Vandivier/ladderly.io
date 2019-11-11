@@ -1,5 +1,22 @@
-<div class="full-page-flex">
-    <h1>Coming Soon</h1>
-</div>
+<nb-layout>
 
-<router-outlet></router-outlet>
+  <nb-layout-header fixed>
+  <!-- Insert header here -->
+  </nb-layout-header>
+
+  <nb-layout-column>
+
+    <div class="full-page-flex">
+        <h1>Coming Soon</h1>
+        <a routerLink="auth">Beta Login</a>
+    </div>
+    
+    <router-outlet></router-outlet>
+    
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
