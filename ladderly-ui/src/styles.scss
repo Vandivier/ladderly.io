@@ -1,3 +1,12 @@
+/* THEME:
+
+                        '#1A4753',
+                        '#FFFFFF',
+                        '#00A8E5',
+                        '#000505',
+                        '#A5FFFF',
+                        */
+
 body {
     background: rgb(0, 5, 5);
     background: linear-gradient(
@@ -26,3 +35,6 @@ body {
         text-align: center;
     }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
