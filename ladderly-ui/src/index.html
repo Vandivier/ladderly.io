@@ -1,14 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>LadderlyUi</title>
-  <base href="/">
+    <head>
+        <meta charset="utf-8" />
+        <title>LadderlyUi</title>
+        <base href="/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    </head>
+    <body>
+        <app-root></app-root>
+
+        <canvas id="particle-canvas"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+        <script>
+            /*
+            window.onload = function() {
+                Particles.init({
+                    color: [
+                        '#1A4753',
+                        '#FFFFFF',
+                        '#00A8E5',
+                        '#000505',
+                        '#A5FFFF',
+                    ],
+                    connectParticles: true,
+                    selector: '#particle-canvas',
+                })
+            }
+            */
+        </script>
+    </body>
 </html>

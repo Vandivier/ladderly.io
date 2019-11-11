@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core'
-import { Routes, RouterModule } from '@angular/router'
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
+    /*
     { path: '', pathMatch: 'full' }, // home
     {
         path: 'auth',
@@ -36,7 +37,8 @@ const routes: Routes = [
     // { path: "blog" },
     { path: 'profile' },
     { path: '**', redirectTo: 'pages' }, // 404
-]
+    */
+];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
